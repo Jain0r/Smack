@@ -29,11 +29,11 @@
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:text="@string/nav_header_title"
+        android:text="Pqvnc"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintStart_toEndOf="@+id/userImageNavHeader"
         app:layout_constraintTop_toTopOf="@+id/userImageNavHeader"
-        tools:text="Pqvnc" />
+        tools:text="Pqvnc"/>
 
     <TextView
         android:id="@+id/userEmailNavHeader"
@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:text="@string/nav_header_subtitle"
+        android:text="pqvnc@gmail.com"
         app:layout_constraintBottom_toBottomOf="@+id/userImageNavHeader"
         app:layout_constraintStart_toEndOf="@+id/userImageNavHeader"
         tools:text="pqvnc@gmail.com" />
@@ -55,7 +55,7 @@
         android:layout_marginBottom="16dp"
         android:background="@android:color/transparent"
         android:onClick="loginBtnNavClicked"
-        android:text="LoGin"
+        android:text="@string/login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userImageNavHeader"
@@ -73,6 +73,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.896" />
+        app:layout_constraintVertical_bias="0.896"
+        android:contentDescription="TODO" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

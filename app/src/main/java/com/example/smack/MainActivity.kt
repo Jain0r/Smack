@@ -1,5 +1,6 @@
 package com.example.smack
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 //SE IMPORTO android.view para la funcion del loginBtnNavClicked
@@ -26,6 +27,8 @@ class MainActivity : AppCompatActivity() {
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
+
+
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         val navView: NavigationView = findViewById(R.id.nav_view)
         val navController = findNavController(R.id.nav_host_fragment)
@@ -35,6 +38,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow), drawerLayout)
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
     }
 
 
@@ -44,9 +48,11 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 
-    fun loginBtnNavClicked(view : View){
-
+    fun loginBtnNavClicked(view: View){
+        val loginIntend = Intent(this, LoginActivity::class.java)
+        startActivity(loginIntend)
     }
+
     fun addChannelClicked(view : View){
 
     }
@@ -54,4 +60,5 @@ class MainActivity : AppCompatActivity() {
     fun sendMsgBtnClicked(view: View){
 
     }
+
 }
