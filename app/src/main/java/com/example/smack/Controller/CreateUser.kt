@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.example.smack.R
+import com.example.smack.Services.AuthService
 import kotlinx.android.synthetic.main.activity_create_user.*
 import java.util.*
 
@@ -46,11 +47,15 @@ class CreateUser : AppCompatActivity() {
         val savedB = b.toDouble() / 255
 
         avatarColor= "[$savedR, $savedG, $savedB, 1]"
-        println(avatarColor)
+        //println(avatarColor)
 
     }
 
     fun createUserClicked(view: View){
+        AuthService.registerUser(this, "j@j.com", "123456") {complete ->
+            if (complete){
 
+            }
+        }
     }
 }
