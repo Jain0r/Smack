@@ -12,7 +12,7 @@
         android:layout_height="45dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="156dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:ems="10"
@@ -43,17 +43,17 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="144dp"
         android:text="no tienes cuenta loco?"
-        app:layout_constraintBottom_toTopOf="@+id/loginCreateUserBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginLoginBtn" />
 
     <Button
         android:id="@+id/loginLoginBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="48dp"
         android:onClick="loginLoginBtnClicked"
         android:text="@string/login"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,11 +65,11 @@
         android:id="@+id/loginCreateUserBtn"
         android:layout_width="138dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="104dp"
+        android:layout_marginBottom="112dp"
         android:onClick="loginCreateUserBtnClicked"
         android:text="@string/registrate_bby"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/textView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
