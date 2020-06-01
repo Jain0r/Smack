@@ -8,47 +8,44 @@
 
     <EditText
         android:id="@+id/loginEmailText"
-        android:layout_width="0dp"
+        android:layout_width="411dp"
         android:layout_height="45dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/email"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/loginPasswordText"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.78" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/loginPasswordText"
-        android:layout_width="0dp"
+        android:layout_width="411dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="56dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
         android:hint="pass"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/loginLoginBtn"
-        app:layout_constraintEnd_toEndOf="@+id/loginEmailText"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/loginEmailText" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginEmailText" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:text="no tienes cuenta loco?"
         app:layout_constraintBottom_toTopOf="@+id/loginCreateUserBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/loginCreateUserBtn"
         android:layout_width="138dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="252dp"
+        android:layout_marginBottom="88dp"
         android:onClick="loginCreateUserBtnClicked"
         android:text="@string/registrate_bby"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -60,14 +57,12 @@
         android:id="@+id/loginLoginBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="320dp"
+        android:layout_marginBottom="32dp"
         android:onClick="loginLoginBtnClicked"
         android:text="@string/login"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.428" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
